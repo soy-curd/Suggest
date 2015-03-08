@@ -42,7 +42,7 @@ object Suggest {
     val len = (child \ "Length").text
     val surface = (child \ "Surface").text
     val shiteki = (child \ "ShitekiWord").text
-    "　" * start.toInt + shiteki
+    "　" * start.toInt + "^" + shiteki
   }
 
   // xmlを整形して出力
